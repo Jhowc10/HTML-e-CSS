@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam odio sint exercitationem explicabo corrupti, dolores esse in blanditiis fuga excepturi est consectetur, nobis perspiciatis obcaecati rerum voluptas neque? Facilis, a?
+    </p>
+
+    <ul>
+        <li><a href="../02 - iframe - outros conteudos/ii.html" target="freme">Primeira página</a></li>
+        <li><a href="../02 - iframe - outros conteudos/new.html" target="freme">Segunda página</a></li>
+        <li><a href="../01 - iframe - site de fora/ifr.html" target="freme">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas est alias perspiciatis, non dolorem quos blanditiis soluta necessitatibus facilis. Sint voluptas vel laborum sed illo autem debitis illum incidunt fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque dolores quod, quam eveniet perferendis reprehenderit quisquam eaque, vel saepe maiores? Laborum numquam quia modi, delectus ex praesentium autem vero! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci optio, culpa eligendi porro ducimus ut, eum facere nemo ab possimus iste natus perferendis veniam. Illum facilis repudiandae omnis perspiciatis ipsam?
+    </p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio culpa possimus maiores error. Architecto doloribus laborum dignissimos quia maxime, porro unde nostrum eligendi aliquid accusamus ea odio. Porro, cum!</p>
+        <img src='imagem/imge.JPG'>" frameborder="0" id="tela" name="freme">
+       <!-- srcdoc="" - Nele podemos por html.-->
+
+          <!-- Para chamar o iframe nos links, tem que ter o name="" para colocar no target do link-->
+        <p>[ Infelizmente seu navegador não é compativel com está página ]</p>
+    </iframe>
+    
+</body>
+</html>

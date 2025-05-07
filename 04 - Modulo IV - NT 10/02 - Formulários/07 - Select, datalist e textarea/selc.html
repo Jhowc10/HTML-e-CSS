@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <!-- select cria uma caixa de seleão e os option são os valores para serem selecionados -->
+
+            <select name="estado" id="iest">
+                <!-- optgroup = divide por grupo e o label serve para por o título não selecionavél -->
+                <option value="" selected> ----ESCOLHA---- </option> <!-- selected = já deixa selecionado na caixa de texto, pode se colocar em qualquer option-->
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option> 
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="BH">Bahia</option>
+                    <option value="SA">Salvador</option>
+                    <option value="PE">Pernanbuco</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profisão: </label>
+            <input type="text" name="prof" id="iprof" list="lista">
+            <!-- datalist = serve para criar uma lista que será feita com option, e ao clicar na caixa, aparecerá as opções -->          
+            <datalist id="lista">
+                <opiton value="ADM">Administrador</opiton> <!-- Se tirar o value, não aparecerá o ADM, somente a lista-->
+                <opiton value="CONT">Contador</opiton>
+                <opiton value="DEV">Desenvolvedor</opiton>
+                <opiton value="PROF">Professor</opiton>
+            </datalist>
+           
+        </p>
+
+        <p>
+            <!-- Par não ter problemas de limitação, ao usar o texarea, deixar o form no metod="post" -->
+            <label for="imsg">Mensagem: </label><br>
+                                      <!-- colunas     linhas -->
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!--Aceitara 30 letras e dpois vai quebrar-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Checkbox e Rádio Button</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- Cria uma caixa de seleção redonda -->
+            <input type="radio" name="sexo" id="isxmas" value="M" checked> <!-- checked = já inicia com a caixa marcada, serve para checkbox tbm, que pode ser mascado vários, no rádio, só um-->
+            <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+            <!-- Obs.: Para ele desmarcar, temos que deixar o "name" igual, senaõ, não desmarcará. Isso só funciona no rádio -->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <!-- checkbox = cria um caixa de seleção quadrada-->
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br> <!-- Com br quebra a linha, sem br ficam na mesma linha-->
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol <br></label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação <br></label>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis <br></label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form> 
+</body>
+</html>

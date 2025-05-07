@@ -1,0 +1,19 @@
+/* Recras para CSS3, são colocadas com @ no inicio, no inicio do CSS */
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(180, 162, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+h1{
+    color: blue;
+    background-color: aqua;
+}
+h2{
+    color: red;
+}
+p{
+    text-align: justify;
+}

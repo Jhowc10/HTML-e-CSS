@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(177, 173, 173);
+            margin: 0%;
+        }
+        header{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            /* Cria sombra */
+            box-shadow: -6px 7px 12px rgba(0, 0, 0, 0.753);
+        }
+        nav{
+            background-color: rgb(92, 95, 94);
+            padding: 3px;
+            box-shadow: -1px 2px 2px black; /* Deslocamento horizontal, //    vertical, espalhamento e cor */
+        }
+        nav > a{
+            text-decoration: none;
+            color: antiquewhite;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            /* 
+            Sendo iguais podemos deixar do 2 parametros, ex.:
+            border-radius: 12px; / Todos os cantos terão 12.
+            border-radius: 12px 75px; / Terá o mesmo efeito abaixo. 
+            */
+            border-radius: 12px 75px 12px 75px;
+        }
+        article{
+            background-color: rgb(218, 218, 202);
+            padding: 5px;
+
+            border-radius: 0px 10px 0px 42px;
+        }
+        article > aside{
+            background-color: rgb(250, 198, 130);
+            border-radius: 0px 0px 0px 5px;
+        }
+        footer{
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+            
+        }
+
+        /* Fazendo uma bola */
+        #bola{
+           height: 100px;
+           width: 100px;
+           margin: 20px;
+           background-color: antiquewhite; 
+           border-radius: 50px;
+           
+           /* mover imagens, margin-left: margin-right: margin: depois dos pontos colocar auto, para mover automáticamente. */
+           margin-left: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho / primário-->
+        <h1>Meu site</h1>  <!-- Secundária -->
+
+        <nav>  <!-- Cria uma barra de navegação -->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+
+    </header>
+
+    <main> <!-- Conteúdo princial / primário-->
+        <section id="assuntos"> <!-- Sessões -->
+            <p>Esportes Politicas Tecnologias</p>
+
+        </section>
+        <section id="noticias">
+            <article> <!-- Artigo -->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni deleniti odio, velit dolor officiis ducimus, accusantium molestias quos distinctio modi sapiente sunt, repellendus eius illum qui fugiat enim cupiditate? Aspernatur?</p>
+
+                <aside> <!-- Periferico ao article-->
+                    <p>Artigo escrito por .......</p>
+
+                </aside>
+
+            </article>
+          
+        </section>
+
+    </main>
+
+    <footer> <!-- Rodapé / primário-->
+        <p>Desenvolvido pelo Curso em Video</p>
+
+    </footer>
+
+    <div id="bola"></div>
+
+
+    
+</body>
+</html>

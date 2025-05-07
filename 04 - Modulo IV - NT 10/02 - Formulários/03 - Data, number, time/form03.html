@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Elementos number, month, date e time</h1>
+    <p>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30"
+            placeholder="Nome completo" autocomplete="name">
+    
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label> <!-- type="number" só poderá por numeros no campo, ao acrescentar o atributo value="", poderá já deixar um valor na caixa, porém o placeholder não aparecerá, ou um ou outro -->
+            <input type="number" value="5" name="media" id="imedia" min="0" max="11"
+            placeholder="0 a 10" step="0.1"> <!-- Nas caixas numericas, se utilia  o max e o min -->
+        </p>                                 <!-- step="" = passos, é para fazer ler numeros entre pontos-->
+
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" value="2022-04-07" name="dia" id="idia">
+            <!-- date = é um calendário mais completo -->
+        </p>
+
+        <p>
+            <label for="hora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+            <!-- time = abre um formulário para se colocar a hora
+             -->
+        </p>
+
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" value="2020-07" name="mes" id="imes">
+            <!-- month = mês, abre um formulário para o mês -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+       
+    </form>
+</body>
+</html>

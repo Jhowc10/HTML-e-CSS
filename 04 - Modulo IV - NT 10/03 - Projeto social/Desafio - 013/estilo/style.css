@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100vh; /* Autura total do navegador*/
+    width: 100vw;  /* Largura total do navegador*/
+    background-color: black;
+}
+body{
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+main{
+    position: relative; /* Tem que ser relativo, para poder mover as section */
+    height: 100vh; /* Tamanho do main */
+
+}
+section#telefone{
+    position: absolute; /* Para poder centralizar o #telefone */
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+
+    top: 50%;   /* configuração para centralizar */
+    left: 50%;  /* mas elas precisam ser transformadas usando o comando abaixo */
+    transform: translate(-50%, -50%); 
+}
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 264px;
+    height: 469px;
+}
+#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(23, 21, 21, 0.589);
+    box-sizing: border-box;  /* Para a borda faz parte da caixa */
+}
+#redes-sociais{
+    text-align: right;
+    padding-right: 25px;
+}
+#redes-sociais img:hover{
+    border: 2px solid rgb(236, 229, 229);
+    transform: translate(-3px, -3px); /* Faz os botões dar uma subidinha */
+    transition: transform .5s, border 1s; /* Deixa o deslocamento mais lento / aborda aparece depois de 1s */
+    box-shadow: 5px 5px 10px rgb(130, 14, 14); /* Sombra embaixo dos botões */
+}
+

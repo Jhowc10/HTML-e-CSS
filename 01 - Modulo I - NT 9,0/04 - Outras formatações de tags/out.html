@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+
+</head>
+<body>
+
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <!-- <code> é uma fonte monoespaçada, melhora a visualização de um texto -->
+        <p>O comando <code>document.getElementById</code> ("teste") é escrito em linguagem <strong>JavaScript.</strong></p>
+
+    <!-- Quando o <code> não funcionar, envelopa ele com a tag <pre> até os espaços, qualquer coisa dentro desta tag, será renderizado igualzinho -->
+        <pre>
+            <code>
+                num = int(input("Digite um número"))<!--Linguagem phyton-->
+                if num % 2 == 0:
+                print(f"O número {num} é PAR)
+                else:
+                print(f'O número é ÍMPAR)
+                print('Fim do programa')
+            </code>
+        </pre>
+
+    <hr>
+
+    <h2>Citações</h2>
+    <!-- Quando for utilizar aspas em textos simples "", recomenda-se utilizar o <q> -->
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <h2>Citações completas</h2>
+    <!-- Para um texto grande, se usa o bloco <blockquote> -->
+    <!-- Também podemos usar o <blockquote cite="URL do texto" -->
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos</p>
+
+        <blockquote cite="">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate fugiat laudantium consequuntur corrupti quo excepturi quos nemo quibusdam dolore aspernatur modi, e os similique exercitationem iure officia delectus sapiente nam placeat.
+    </blockquote>
+
+    <hr>
+
+    <h2>Abreviações</h2>
+    <!-- Use a tag <abbr title=""> para abreviar. Entre as "" se coloca o significado da abreviação -->
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <hr>
+
+    <h2>Texto invertido</h2>
+    <!-- A tag <bdo dir='rtl'> inverte o texto -->
+    <!-- Entre "" o rtl inverte e o ltr volta ao normal -->
+        <p><bdo dir="rtl">Estou aprendendo coisas em HTML.</bdo></p>
+    
+</body>
+</html>

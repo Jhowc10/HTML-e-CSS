@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Exemplo d formulário</h1>
+
+    <form action="cadastro.php" autocomplete="on">
+
+
+        <fieldset> <!-- Agrupa as caixas em um só-->
+        <!-- Podemos fazer vários fieldset, assim separamos o formulário por categorias, ex: Dados pesoais, dados do veiculo, dados escolares...... -->
+            <legend>Dados pessoais</legend> <!-- Um titulo para o formulário -->
+            <P>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </P>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <!-- Abre um formulário para email -->
+            </p>
+            <p>
+                <!-- Estudar sobre RegEx = Regular Expretion -->
+                <label for="itel">Telefone</label>   <!-- Podes se fazer assim tbm pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"-->
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                <!-- ^ = inicio da expresão regular / $ = Fim da expresão regular -->
+                <!-- Na expresão regular, digitos são:\d ou [0-9] e entre {}, colocamos a quantidade de numeros -->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace; /* Fontes monospace são exelentes para impressão */
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+/* Se não quiser que algo seja imprimido, fazemos:  */
+menu{
+    display: none; /* none = não exibir, então, não aparecerá na imressão */
+}
+article{
+    width: 100%; /* Irá ocupar a largura toda do papel */
+}
+article::after{  /* after quer dizer depois */
+    content: "Este artigo foi impresso através do site www.cursoemvideo.com";
+    /* content: serve para escrever */
+}

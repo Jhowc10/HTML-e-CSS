@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem consectetur quia esse doloribus sed assumenda id illo, quaerat laborum deserunt cumque molestiae velit. Voluptatibus facilis veniam vero ullam ipsa exercitationem?</p>
+
+    <!-- sandbox="sandbox", este comando bloqueia as ações de fora de um site que vc utilizou no seu iframe, deixa o bloqueio no maximo dando mais segurança ao seu site -->
+
+    <!-- sandbox="allow-same-origin" = Permite que funcione só o que esteja em seu servidor, bloqueando o resto -->
+
+    <!-- sandbox="allow-scripts" = Permite só os scripts -->
+
+
+    <!-- sandbox="allow-forms" = Permite que só os formulários funcione -->
+
+    <!-- Posso dar várias permições: sandbox="allow-same-origin allow-forms allow-scripts"  -->
+
+    <!-- Ao utilizar o referrerpolicy, deixa mais segura ainda, limita mais ainda -->
+    <iframe src="seg.html" frameborder="0" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        [ Seu navegador não é compátivel ]
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium ex aspernatur nulla sequi accusantium vero quisquam autem voluptates deserunt? Ullam dolorem laboriosam ut nam voluptatibus sunt harum odit modi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo consectetur blanditiis ipsa expedita quia minus dolorum deserunt voluptate commodi asperiores at atque vitae culpa libero odit ipsam, rerum delectus illum.</p>
+    
+</body>
+</html>

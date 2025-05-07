@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    background: black url(../imagens-cap25/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+main{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+    
+}
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(128, 128, 128, 0.786);
+    font-size: 2em;
+}
+#phone{ display: block;} /* none = esconde / block = mostra */
+#tablet{display: none;}
+#print{display: none;}
+#pc{display: none;}
+#tv{display: none;}

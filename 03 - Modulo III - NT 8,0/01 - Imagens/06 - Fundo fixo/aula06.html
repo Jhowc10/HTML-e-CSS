@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem</title>
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('../ImagensCap19/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            /*  background-size: 100% 100%;  */ /* A imagem se adapta a tela conforme aumenta e diminui, a autura e a largura, porém o height tem que esta ativado, de preferenci no 100vh     NÃO É ACONSELHADO ESTE ESTILO */
+            background-size: cover; 
+                       /*     auto; segundo melhor método para aplicar*/
+                       /* contein; Para exibir 100%, mas ainda fica sobra. */
+                       /*   cover; Exibira a imagem 100% da vioporte, vai mostrando a imagem aos poucos, este método tbm é MAIS aconselhavel */ 
+            background-attachment: fixed;
+
+            /* 
+            Shorthand - background:
+            color > image > position > repeat > [size] > attachment/ Exatamente nesta ordem.
+
+            background: black url('../ImagensCap19/wallpaper002.jpg')center center no-repeat fixed;
+
+            Todos os background acima reunidos em um só 
+            */
+            
+         }
+        main{
+            background-color: antiquewhite;
+            max-width: 700px; /* Melhor usar este do que só usar o width */ /* Aumentará até no maximo 700 px;
+            /* width: 400px; Lagura */
+            padding: 10px; /* Espaço interno */
+            margin: auto;  /* Alinha ao meio */
+            border: 1px solid darkblue;
+            border-radius: 15px;
+            
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde, optio sit, adipisci obcaecati accusantium nulla praesentium sunt quod cumque perspiciatis eveniet id ex officia tempora alias earum quasi ut! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae eveniet amet totam debitis quam qui officia quia odio quas at consequatur recusandae dolores magnam a in, aperiam modi id!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error assumenda consequuntur quisquam, corporis quidem eum in cupiditate quia hic nulla sapiente reiciendis esse minus sint commodi tempore tempora modi neque?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quam odit repudiandae aliquid officia autem suscipit ipsa. Ab dolor magnam sit delectus, perferendis eaque fugiat assumenda ad magni voluptatem ipsam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus repellat, sunt magni excepturi fugiat rerum sed, vero possimus adipisci perspiciatis, explicabo aliquam non magnam! Nostrum distinctio dolorem assumenda dolorum impedit.</p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat asperiores rem repellendus possimus expedita debitis distinctio veritatis commodi dolores beatae laborum itaque voluptatibus, necessitatibus officia ab sint. Voluptas, magni!Lorem</P>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit maiores eius cum eaque quia? Ullam sed reiciendis placeat mollitia accusamus voluptate? Nisi ad aperiam ducimus voluptas incidunt minima temporibus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum dolor doloribus illo quam illum inventore praesentium tenetur vero, fugit delectus dolorem maiores, nemo ipsam, natus pariatur quibusdam ad? Illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, deleniti nulla ex sint consequuntur veritatis expedita, suscipit doloremque labore necessitatibus maiores similique optio. Labore non harum blanditiis temporibus, accusantium eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora vero, blanditiis eius aut temporibus odio id voluptate quas laboriosam? Quis dolorum quas accusantium ducimus praesentium itaque labore officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repudiandae, rerum accusamus sit similique expedita, nisi doloremque eveniet tempora sed itaque non eaque totam dolores eum quasi accusantium aut veniam.</p>
+    </main>
+    
+</body>
+</html>

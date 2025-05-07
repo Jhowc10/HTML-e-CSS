@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;           
+        }
+        table{
+            width: 400px;  /* Largura da tabela */
+            height: 400px; /* Altura da tabela */
+            border-collapse: collapse; /* Estilo da borda, collapse deixa unidas, separate separa elas */           
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhanto horizontal dos itens da tabela para direita, esquerda ou centro */
+            vertical-align: middle; /* Alinhamento vertical, para cima e para baixo middle = center */
+        }
+       .numero{
+        text-align: right;
+       }
+    </style>
+</head>
+<body>
+    <!-- NÃO PODE USAR TABELA PARA CRIAR A ESTRUTURA DO SEU SITE  -->
+    <!-- 
+        HIERARGUIA DAS TABELAS SIMPLES
+        Table = tabela 
+        table row = linha da tabela 
+            table reader = cabeçalho da tabela
+            table data = dado da tabela
+     -->
+     <!-- É opcional fechar as tags <tr> e <td> -->
+
+    <h1>Minha primeira tabela</h1>
+    <table> <!--Tag para delilitar a tabela -->
+        <tr> <!-- table row--> <!-- Primeira linha -->
+            <td class="dado">A1</td> <!-- Table data -->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr >
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>

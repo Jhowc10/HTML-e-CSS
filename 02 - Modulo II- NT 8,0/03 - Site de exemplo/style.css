@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+body{
+    background-image: linear-gradient(to right, #0caba89c, #008f8da1, #015958be, #023535);
+}
+main{
+    background-color: white;
+    width: 600px;  /* Largura */
+    padding: 10px; /* Abarroamento / engordadinha */
+    /*        qt irá p o lado / qt irá p baixo /  qt irá se espalhar / cor */
+    box-shadow:    10px               5px              5px         rgba(0, 0, 0, 0.377);  /* Coloca sombra */
+    margin: auto;  /* Centraliza a tag, mantendo ela sempre no centro */
+    border-radius: 20px; /* arredonda as bordas */
+}
+h1{
+    color: #0caba8;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(67, 211, 187);
+}
+h2{
+    color: #0FC2C0;
+}
+p{
+    text-align: justify;
+}

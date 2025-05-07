@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links, Links para dowloads</title>
+
+</head>
+<body>
+
+    <!-- Link externo é aquele que te redireciona para outro site. -->
+    <h1>Usando links externos</h1>
+
+    <!--    a = âncora.
+         href = referencia a hipertexto -->
+
+    <p>Podemos acessar um site atráves do seu site, mavos testa vendo as motos <a href="https://www.google.com/search?newwindow=1&sxsrf=APwXEdeH8sdLY3dlZwiu63T2CTTBhntabw:1687778955289&q=site+com+fotos+de+moto+caf%C3%A9+racer&tbm=isch&sa=X&ved=2ahUKEwjgkdvI6uD_AhW8kZUCHThkDfwQ0pQJegQIDhAB&biw=1280&bih=520&dpr=1">café racer</a>, que são as mais bonitas.</p>
+
+    <!-- Acima, ao ser redirecionado para o site de café racer, ele abre na mesma página e fechando a sua, para links externos, podemos evitar da sua pagina sumir, podemos abrir o site em outra pagina. -->
+    <!-- adicionando targe="_blank, o site abrirá em outra página" -->
+
+    <p>Agora vamos ver um otimo carro, o <a href="https://www.noticiasautomotivas.com.br/peugeot-308/" target="_blank" rel="external">peugeot 308</a>, que é o mais bonito e completo, iremos saber sobre seu consumo, preço, desempenho, acabamento e conforto.</p>
+
+    <!-- target="_blank" = significa que quero abrir uma página, mas a minha permanecerá aberta também
+            rel="external" = estou dizendo ao navegador que vou abrir um site externo -->
+
+    <hr>
+
+    <h2>Links internos</h2>
+    <p> Agora vamos ver como funciona um link interno, <a href="morar.html" rel="next">clique aqui</a> para ver onde eu quero morar daqui uns anos.</p>
+
+    <!-- Podemos facilitar o navegador a encontrar a sua página, basta acresentar rel="next" na principal e rel="prev" para retornar, na outra pagina -->
+
+    <hr>
+
+    <!-- Sempre que for fazer um link patrocinado, acrescente o rel="nofoll", ele só buscará por páginas oficiais, a não ser que o cliete não queira -->
+  
+    <p>Vamos entrar num site oficial da <a href="https://carros.peugeot.com.br/" target="_blank" rel="nofollow">Peugeot.</a></p>
+
+    <hr>
+
+    <h2>Sites em outra pasta</h2>
+
+    <!-- Quando o site se encontra dentro de pasta, usamos ./ e ../
+    ./ = própria pasta
+    ../ = pasta anterior. -->
+
+    <p>Você também pode acessar páginas armazenadas em outras pastas, <a href="noticias/not.html" rel="next" target="_self"  >clique aqui</a> para um site de links de noticias</p>
+
+    <!-- target="_self" significa que é para abrir na própria página
+    Obs.: Para abrir na própria página, ou vc não faz nada, ou acrescenta o target="_self". -->
+
+    <h2>Links para downloads</h2>
+
+    <ul>
+        <li><a href="01 - História da Internet.pdf" download="históriaInternet.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Downloads.zip" download="históriaInternet.zip" type="application.zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <!-- Para confirmar que vai baixar, acrescente o download="". -->
+
+    
+</body>
+</html>

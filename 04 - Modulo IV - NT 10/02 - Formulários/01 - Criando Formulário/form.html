@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Existem dois métodos para se enviar dados do formulário:
+        Método padrão: GET - que coloca na url os dados - até 3000 bytes / letras.
+        Método 2: POST - não aparece os dados na url -->
+
+    <!-- Serve para coletar e armazenar dados dos usuário  -->
+
+    <!-- Formulário básico -->
+    <!-- Todo formulário tem que estar dentro da tag <form> -->
+    <!-- Todo <input> tem que ter nome=""e id=""-->
+    <h1>Meu primeiro formulário</h1>
+
+    <!-- Utilizando php para armazenar os dados colocados no formulário -->
+    <!-- A função action serve para enviar o formulário, quando apertar no botão enviar -->
+    
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- Desliga o preenchimento automático do fotmulário -->
+        <!-- Name serve para htlm e php e id para JavaScript -->
+
+        <p><label for="inome">Nome:</label> <!-- <label ser para unificar a palavra nome com a caixa de texto, colocando no for o nome que esta em name="" ou no id="", a caixa de texto ficará atrelada a palavra, daremos preferencia ao id=""-->
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <!-- Todo botão tem que ter um value="", que é o titulo do botão, no value vc escreve o nome que dará ao botão-->
+        <!-- submit significa = submeter / enviar -->
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+
+    
+</body>
+</html>

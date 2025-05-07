@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=The+Nautigal:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+}
+/* Cabeçalho */
+
+header{
+    background-image: linear-gradient(to bottom, rgba(35, 167, 105, 0.87), rgb(11, 51, 32));
+    color: antiquewhite;
+    height: 260px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 100;
+    font-family: 'Bebas Neue',sans-serif;   
+    padding-top: 40px;
+    padding-bottom: 45px;  
+}
+p{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px;
+}
+.pg:hover{
+    color: rgb(162, 238, 194);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-seri;
+    padding: 10px;
+}
+.pg{
+    color: rgb(121, 189, 157);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 10px;
+}
+.pg:hover{
+    display: inline;
+    background-color: rgb(59, 177, 128);
+    color:rgb(11, 51, 32);
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+}
+/* Conteúdo */
+main{
+    background-color: rgb(255, 254, 253);
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.192);
+    margin: 0px 100px;
+      
+}
+h2{
+    color: rgb(15, 75, 52);
+    font-family: "android",'Courier New', Courier, monospace;
+    font-size: 1.9em;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.par{
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    margin-top: 15px; 
+    margin-bottom: -50px;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+strong{
+    color: rgb(28, 75, 58);
+}
+.parag{
+    background-color: rgb(122, 201, 157);
+    text-decoration:none;
+    padding: 5px;
+}
+.parag:hover{
+    color:rgb(14, 75, 41);
+    text-decoration: underline;
+}
+#droid{
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h3{
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: rgb(22, 83, 55);
+    background-image: linear-gradient(to left, rgba(242, 245, 244, 0.87),  rgb(197, 221, 210), rgb(133, 236, 188)); 
+    margin: -45px 10px 10px 10px;
+    margin-left: 20px; 
+    margin-right: 20px;
+    padding-left: 10px;
+}
+#irina{
+    margin-top: 10px;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+#dro{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+#vid{
+    background-color: rgb(13, 44, 17);
+    margin-top: -60px;
+    height: 525px;
+    text-align: center;
+    padding: 20px 10px ;
+    margin: 0px 100px 0px 100px;
+}
+h4{
+    background-color: rgb(19, 99, 68);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 130px;
+    margin-right: 130px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+#secund{
+    background-color: rgb(104, 182, 152);
+    margin-top: -15px;
+    margin-left: 130px;
+    margin-right: 130px; 
+}
+#ppp{
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    margin-top: 35px;
+}
+footer{
+    text-align: center;
+}
+
+

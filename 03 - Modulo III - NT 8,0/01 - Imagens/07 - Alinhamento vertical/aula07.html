@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+
+        /* 
+        A regra é que, o que está de fora, que está contendo, fica no relativo e o que esta dentro, fica no absoluto, ao colocar no absoluto, habilitamos duas propriedades, o left e o top 
+        */
+
+        /* Em imagens, é bom trabalhar com porcentagem  */
+        
+        #container{
+            /* Use esta imagem para alinhar  */
+            /* background-image: url('../ImagensCap19/target001.png'); 
+            background-size: 100% 100%; */
+
+            position: relative;  /* O container tem que ficar na relative */
+            height: 500px;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        #conteudo{
+            /* Use esta imagem para alinhar */
+            /* background-image: url('../ImagensCap19/target001.png'); 
+            background-size: 100% 100%; */
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* Serve para alinhar tanto na vetical como na horizontal */
+
+            /* margin: auto; */ /* Só serve par alinhamento horizontal */
+
+
+        }
+    </style>
+
+</head>
+<body>
+<!-- Sempre que for alinhar na vertical, tem que ter a presença de uma section e um article -->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>

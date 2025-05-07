@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+
+    <!-- Tamanhos para cada tipo de dispositivo
+        PC, TV, Telão: acima - 1000x1000;
+        Tablet: 700x700;
+        Celulares: até 300x300.-->
+
+    <h1>Imagem dinâmica</h1>   
+    
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:  750px)" srcset="imagens/image-p.png" type="image/png"> 
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png"> <!--Não esquecer de adicionar esta tag-->
+        <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Audios</h2>
+
+    <!-- Existem duas maneiras de colocar áudios -->
+
+    <!--Maneira 1-->
+    <p>Vamos aprender a reroduzir áudios em HTML5</p>
+    <audio src="audio/happy-mistake.mp3"  controls autoplay ></audio>
+
+    <!-- Maneira 2 -->
+    <!-- Tipos de formatação de áudio: MP3, WAV, OGG -->
+    <audio preload="none" autoplay controls >
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="audio/guanacast-33.mp3">Clique aqui para baixar o áudio.</a></p>
+    
+
+    <!-- Abaixo vai uma lista de como escrever o codigo com áudios de formatação diferente.
+    O codigo abaixo é identico ao de adicionar imagens, que estáacima, se ele não carregar uma formatação de áudio, ele tentará carregar a proxima-->
+
+    <audio preload="" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg" >
+        <source src="midia/guanacast-33.wav" type="audio/wav" >
+    </audio>
+
+
+
+</body>
+</html>
